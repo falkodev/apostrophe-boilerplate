@@ -4,7 +4,8 @@
   "description": "Minimal Apostrophe Boilerplate",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "node-dev app.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +14,8 @@
   "author": "P'unk Avenue",
   "license": "MIT",
   "dependencies": {
-    "apostrophe": "^2.47.0"
+    "apostrophe": "^2.47.0",
+    "apostrophe-workflow": "^2.30.0"
   },
   "nodemonConfig": {
     "verbose": true,
@@ -28,5 +30,8 @@
       "data"
     ],
     "ext": "json, js, html, less"
+  },
+  "devDependencies": {
+    "node-dev": "^4.0.0"
   }
 }
