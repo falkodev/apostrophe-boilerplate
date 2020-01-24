@@ -21,6 +21,35 @@
       {{ __('home')}}<br>
       {{ __n('%s file', 1)}}<br>
       {{ __n('%s file', 2)}}<br>
+      <svg><use xlink:href="/modules/my-apostrophe-svg-sprites/svg/places.svg#ic_ac_unit_24px"></use></svg>
     </h3>
+
+    {{
+      apos.area(data.page, 'richText', {
+        widgets: {
+          'apostrophe-rich-text': {
+            toolbar: [ 'Bold', 'Italic', 'Link' ]
+          },
+          'apostrophe-tiptap': {
+            toolbar: [ 'bold', 'italic', 'link', 'table', 'modal' ],
+            styles: [
+              {
+                tag: 'p',
+                label: 'Paragraph'
+              },
+              {
+                tag: 'h3',
+                label: 'Heading'
+              },
+              {
+                tag: 'h3',
+                'class': 'right',
+                label: 'Heading (Right)'
+              }
+            ]
+          }
+        }
+      })
+    }}
   </div>
 {% endblock %}
