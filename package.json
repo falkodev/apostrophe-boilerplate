@@ -4,8 +4,8 @@
   "description": "Minimal Apostrophe Boilerplate",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "node-dev app.js"
+    "dev": "monitor",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,9 @@
   "license": "MIT",
   "dependencies": {
     "apostrophe": "^2.47.0",
-    "apostrophe-i18n-debugger": "^2.0.0",
+    "apostrophe-copy-page-from-elsewhere": "apostrophecms/apostrophe-copy-page-from-elsewhere",
+    "apostrophe-i18n-static": "^1.0.0-alpha.1",
+    "apostrophe-monitor": "^2.0.5",
     "apostrophe-svg-sprites": "^1.0.16",
     "apostrophe-tiptap-rich-text-widgets": "^0.3.0",
     "apostrophe-workflow": "^2.30.0"
@@ -34,7 +36,5 @@
     ],
     "ext": "json, js, html, less"
   },
-  "devDependencies": {
-    "node-dev": "^4.0.0"
-  }
+  "devDependencies": {}
 }

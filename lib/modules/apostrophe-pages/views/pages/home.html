@@ -14,13 +14,21 @@
     </h3>
     <h3>
       {{ __('Hello World') }}<br>
-      {{ __n('%s cat', 1)}}<br>
-      {{ __n('%s cat', 3)}}<br>
-      {{ __n('%s dog', 1)}}<br>
-      {{ __n('%s dog', 2)}}<br>
-      {{ __('home')}}<br>
-      {{ __n('%s file', 1)}}<br>
-      {{ __n('%s file', 2)}}<br>
+      {{ __n('%s cat', 1) }}<br>
+      {{ __n('%s cat', 3) }}<br>
+      {{ __n('%s dog', 1) }}<br>
+      {{ __n('%s dog', 2) }}<br>
+      {{ __('home') }}<br>
+      {{ __n('%s file', 1) }}<br>
+      {{ __n('%s file', 2) }}<br>
+      {{ __('greeting:Hello') }}<br>
+      {{ __('obj-nested-1:nested') }}<br>
+      {{ __('obj-nested-2') }}<br>
+      {{ __('obj-nested-7') }}<br>
+      {{ __('obj-nest') }}<br>
+      {{ __n('%s nested-deep-val', 1) }}<br>
+      {{ __n('%s nested-deep-val', 3) }}<br>
+      {{ __('test') }}<br>
       <svg><use xlink:href="/modules/my-apostrophe-svg-sprites/svg/places.svg#ic_ac_unit_24px"></use></svg>
     </h3>
 
@@ -31,7 +39,7 @@
             toolbar: [ 'Bold', 'Italic', 'Link' ]
           },
           'apostrophe-tiptap': {
-            toolbar: [ 'bold', 'italic', 'link', 'table', 'modal' ],
+            toolbar: [ 'bold', 'italic', 'link', 'table', 'import' ],
             styles: [
               {
                 tag: 'p',

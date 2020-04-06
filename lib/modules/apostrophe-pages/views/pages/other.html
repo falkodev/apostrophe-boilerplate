@@ -8,5 +8,31 @@
       {{ __('Hello World') }}<br>
       {{ __('test')}}<br>
     </h3>
+
+    {{
+      apos.area(data.page, 'image', {
+        widgets: {
+          'apostrophe-images': {},
+          'apostrophe-tiptap': {
+            toolbar: [ 'bold', 'italic', 'link', 'table', 'modal' ],
+            styles: [
+              {
+                tag: 'p',
+                label: 'Paragraph'
+              },
+              {
+                tag: 'h3',
+                label: 'Heading'
+              },
+              {
+                tag: 'h3',
+                'class': 'right',
+                label: 'Heading (Right)'
+              }
+            ]
+          }
+        }
+      })
+    }}
   </div>
 {% endblock %}
